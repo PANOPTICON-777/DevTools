@@ -132,15 +132,3 @@ Finally, we used the Android SDK command-line tools to build the app.
 The result is two files:
 - `DevTools-v1.0.0.apk` (1.4 MB) - The highly optimized, minified release build.
 - `DevTools-v1.0.0-debug.apk` (14 MB) - The debug build (useful if you want to connect Android Studio and step through the code).
-
-## 7. How to Submit to F-Droid
-
-If you want to publish this to the official F-Droid repository, you don't submit the APK. F-Droid builds everything from source to guarantee safety.
-
-Here is what you need to do:
-1. Upload this source code to a public Git repository (GitHub, GitLab, Codeberg).
-2. Fork the `fdroiddata` repository on GitLab.
-3. Add a metadata file for `org.devtools.app` pointing to your Git repo.
-4. Submit a Merge Request to F-Droid.
-
-Their build servers will pull your code, verify it has no proprietary dependencies, compile it, and publish it to their store!
